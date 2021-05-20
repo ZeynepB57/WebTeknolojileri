@@ -1,0 +1,36 @@
+.resimSlider{
+    
+    height: 420px;
+}
+
+.h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: aqua;
+    Color:rgb(15, 14, 14);
+    text-align: center;
+}
+
+h5{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    ;
+
+}
+
+
+.yazi {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    Color:rgb(54, 8, 219);
+   
+}
+
+  .shr
+{
+    padding: 10px;
+}
+ 
+#gez{
+    font-size:larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(100, 237, 173);
+}
