@@ -1,0 +1,12 @@
+.h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: aqua;
+    Color:rgb(15, 14, 14);
+    text-align: center;
+  }
+
+.info{
+    background-color: burlywood;
+    border: 2px solid rgb(160, 22, 22);
+    padding: 20px;
+}
