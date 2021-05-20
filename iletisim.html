@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/iletisim.css">
+  <!-- BOOSTRAP LİNK -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <title>İletişim</title>
+</head>
+
+<body style="background-color:rgb(183, 201, 204);">
+  <header id="header">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-info py=3">
+      <div class="container">
+        <h5 class="navbar-brand mb-0 " >Zeynep Bezirci</h5>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Hakkımda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ozgecmisim.html">Özgeçmişim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sehrim.html">Şehrim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mirasim.html">Mirasımız</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ilgialanlarim.html">ilgi alanlarım</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="iletisim.html">iletişim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="giriş.html">Giriş</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container mt-5 p-4 align-items-center w-75">
+    <div class ="h2">İLETİŞİM</div>
+  </div>
+
+  <section >
+
+ <form action=""  name="form1" onsubmit="return kontrol()">
+  <div class="col-md-4 m-auto">
+    <fieldset class="info">
+    <legend class="text-center text-decoration-underline"> KULLANICI BİLGİLERİ</legend>
+    <table>
+      <tr>
+        <td>AD</td>
+        <td>
+          <input type="text" id="ad" name="ad" placeholder="Adınızı Giriniz">
+        </td>   
+      </tr>
+      <tr>
+        <td>SOYAD</td>
+        <td>
+          <input type="text" id="soyad" name="soyad" placeholder="Soyadınızı Giriniz">
+        </td>
+      </tr>
+      <tr>
+        <td>YAŞ</td>
+        <td>
+          <input type="number" id="yas" name="yas" max="100" min="12" step="2" required>
+        </td>
+      </tr>
+      <tr>
+        <td>DOĞUM TARİHİ</td>
+        <td>
+          <input type="date" id="tarih" name="tarih" placeholder="gün.ay.yıl" required>
+        </td>
+      </tr> 
+      
+      
+        <td>CİNSİYET</td>
+        <td>
+          <label>
+            <input type="radio" id="cins" name="cins" value="kadın">Kadın
+          </label>
+          <label>
+            <input type="radio" id="cins" name="cins" value="erkek">Erkek
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>ŞEHİR</td>
+        <td>
+          <label>
+            <select name="sehir" id="sehir">
+              <option value="...">...</option>
+              <option value="Adana">Adana</option>
+              <option value="Adıyaman">Adıyaman</option>
+              <option value="Afyonkarahisar">Afyonkarahisar</option>
+              <option value="Ağrı">Ağrı</option>
+              <option value="Amasya">Amasya</option>
+              <option value="Ankara">Ankara</option>
+              <option value="Antalya">Antalya</option>
+              <option value="Artvin">Artvin</option>
+              <option value="Aydın">Aydın</option>
+              <option value="Balıkesir">Balıkesir</option>
+              <option value="Bilecik">Bilecik</option>
+              <option value="Bingöl">Bingöl</option>
+              <option value="Bitlis">Bitlis</option>
+              <option value="Bolu">Bolu</option>
+              <option value="Burdur">Burdur</option>
+              <option value="Bursa">Bursa</option>
+              <option value="Çanakkale">Çanakkale</option>
+              <option value="Çankırı">Çankırı</option>
+              <option value="Çorum">Çorum</option>
+              <option value="Denizli">Denizli</option>
+              <option value="Diyarbakır">Diyarbakır</option>
+              <option value="Edirne">Edirne</option>
+              <option value="Elazığ">Elazığ</option>
+              <option value="Erzincan">Erzincan</option>
+              <option value="Erzurum">Erzurum</option>
+              <option value="Eskişehir">Eskişehir</option>
+              <option value="Gaziantep">Gaziantep</option>
+              <option value="Giresun">Giresun</option>
+              <option value="Gümüşhane">Gümüşhane</option>
+              <option value="Hakkâri">Hakkâri</option>
+              <option value="Hatay">Hatay</option>
+              <option value="Isparta">Isparta</option>
+              <option value="Mersin">Mersin</option>
+              <option value="İstanbul">İstanbul</option>
+              <option value="İzmir">İzmir</option>
+              <option value="Kars">Kars</option>
+              <option value="Kastamonu">Kastamonu</option>
+              <option value="Kayseri">Kayseri</option>
+              <option value="Kırklareli">Kırklareli</option>
+              <option value="Kırşehir">Kırşehir</option>
+              <option value="Kocaeli">Kocaeli</option>
+              <option value="Konya">Konya</option>
+              <option value="Kütahya">Kütahya</option>
+              <option value="Malatya">Malatya</option>
+              <option value="Manisa">Manisa</option>
+              <option value="Kahramanmaraş">Kahramanmaraş</option>
+              <option value="Mardin">Mardin</option>
+              <option value="Muğla">Muğla</option>
+              <option value="Muş">Muş</option>
+              <option value="Nevşehir">Nevşehir</option>
+              <option value="Niğde">Niğde</option>
+              <option value="Ordu">Ordu</option>
+              <option value="Rize">Rize</option>
+              <option value="Sakarya">Sakarya</option>
+              <option value="Samsun">Samsun</option>
+              <option value="Siirt">Siirt</option>
+              <option value="Sinop">Sinop</option>
+              <option value="Sivas">Sivas</option>
+              <option value="Tekirdağ">Tekirdağ</option>
+              <option value="Tokat">Tokat</option>
+              <option value="Trabzon">Trabzon</option>
+              <option value="Tunceli">Tunceli</option>
+              <option value="Şanlıurfa">Şanlıurfa</option>
+              <option value="Uşak">Uşak</option>
+              <option value="Van">Van</option>
+              <option value="Yozgat">Yozgat</option>
+              <option value="Zonguldak">Zonguldak</option>
+              <option value="Aksaray">Aksaray</option>
+              <option value="Bayburt">Bayburt</option>
+              <option value="Karaman">Karaman</option>
+              <option value="Kırıkkale">Kırıkkale</option>
+              <option value="Batman">Batman</option>
+              <option value="Şırnak">Şırnak</option>
+              <option value="Bartın">Bartın</option>
+              <option value="Ardahan">Ardahan</option>
+              <option value="Iğdır">Iğdır</option>
+              <option value="Yalova">Yalova</option>
+              <option value="Karabük">Karabük</option>
+              <option value="Kilis">Kilis</option>
+              <option value="Osmaniye">Osmaniye</option>
+              <option value="Düzce">Düzce</option>
+          </select>
+          </label>
+        </td>
+      </tr>
+        <td>DOSYA EKLE</td>
+        <td>
+          <input type="file" id="dosya" name="dosya">
+        </td>
+      </tr>
+      <tr>
+        <td>MAİL ADRESİ</td>
+        <td>
+          <input type="text" name="eposta" id="eposta" placeholder="@....">
+        </td>
+      </tr>
+      <tr>
+        <td>BİLDiĞİNİZ PC DİLLERİ</td>
+        <td>
+          <input type="checkbox" name="secim1"> Html <br>
+          <input type="checkbox" name="secim2"> Css  <br>
+          <input type="checkbox" name="secim2"> C++  <br>
+          <input type="checkbox" name="secim3"> JavaScript 
+        </td>
+      <tr>
+        <tr>
+          <td>AÇIKLAMA</td>
+          <td>
+            <textarea cols="40" rows="5" required> </textarea>
+          </td>
+        </tr>
+    </table>
+    <table>
+      <tr>
+        <input type="submit" id="btnK" name="btnK" value="Kaydet">
+        <input type="reset" id="btnR" name="btnR" value="Temizle">
+      </tr>
+    </table>
+    </fieldset>
+    
+  </div>
+
+ </form>
+  </section>
+  <script src="JS/iletisim.js"></script>
+  </body>
