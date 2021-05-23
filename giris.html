@@ -59,14 +59,14 @@
     
  
   <div class="container mt-5 w-75 p-3">            
-	<form action="PHP/giris.php" name="Form" method="POST" >
+	<form action="PHP/giris.php" name="form1" method="POST" onsubmit="return kontrol(this)" >
 			<div class="form-group">
 				<label for="email">E-posta</label>
-				<input type="text"  name="email" id="email" class="form-control my-2" placeholder="E-posta 'b201210074@sakarya.edu.tr'" required="required">
+				<input type="email"  name="email" id="email" class="form-control my-2" placeholder="E-posta 'b201210074@sakarya.edu.tr'" required="required">
 			</div>
 			<div class="form-group">
 				<label for="password">Şifre</label>
-				<input type="password" id="password" name="" class="form-control my-2" placeholder="Şifre 'b201210074'" required="required">
+				<input type="password" id="password" name="password" class="form-control my-2" placeholder="Şifre 'b201210074'" required="required">
 			</div>
 			<button class="btn mt-3" style="background-color: orange; color: white;" type="submit">Gönder</button>
 			<br><br><br>
