@@ -6,8 +6,6 @@ function kontrol()
   var epostaValue=document.forms["form1"]["eposta"].value;
   var sehirValue=document.forms["form1"]["sehir"].value;
   
-
-  
   if (adValue == "") {
    alert("Ad Kısmı Boş bırakılamaz");
    return false;
@@ -34,5 +32,10 @@ function kontrol()
   return false;
  }
 
+      document.writeln(ad);
+			document.writeln(soyad );
+			document.writeln(eposta);
+			document.writeln(sehir);
+			
  
 }

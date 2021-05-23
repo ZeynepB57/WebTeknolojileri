@@ -57,29 +57,27 @@
   
   <div class="container mt-5 w-50 text-center p-5">
 	
-			<?php 
+  <?php 
 
-				include("kullanici.php");
-					session_start();
+include("kullanici.php");
+if (($_POST["email"] == $user) and ($_POST["password"] == $pass))
+{
+$_SESSION["login"] = "true";
+$_SESSION["user"] = $user;
+$_SESSION["pass"] = $pass;
 
-				if (($_POST["email"] == $user) and ($_POST["password"] == $pass)){
-			       $_SESSION["login"] = "true";
-			       $_SESSION["user"] = $user;
-			       $_SESSION["pass"] = $pass;
-                   $_SESSION["name"]=$name;
-			
-			       echo("$name, <br> <br> Hoşgeldiniz!");                  
-                   
-                   
-				}
-			
-				else{
-			        echo "Kullancı Adı veya Şifre Yanlış.<br> <br>";
-			        echo "!!!TEKRAR DENEYİN!!!";
-			        header("Refresh: 2; url=giris.html");
-			    }
-			
-			?>
+echo( "GİRİŞ BAŞARILI");
+
+}
+
+else 
+{
+     echo "Kullancı Adı veya Şifre Yanlış.<br>";
+     echo "!!!TEKRAR DENEYİNİZ!!!";
+     header("Refresh: 1; url=giris.html");
+}
+
+?>
 			
     </div>
 
