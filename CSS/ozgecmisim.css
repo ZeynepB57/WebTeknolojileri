@@ -49,14 +49,18 @@ h3{
     text-align: center;
   }
 .section-left{
+    margin-left: 20px;
    background-color: white;
     float: left;
     width: 400px;
+    height: 800px;;
 }
 .section-right{
+    margin-right: 20px;
     background-color: white;
     float: right;
     width: 400px;
+    height: 800px;
 }
  h4{
     margin-left: 10%;
